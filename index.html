@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <link rel="stylesheet" type="text/css" href="/Users/sikindharreddygangidi/Desktop/calccss.css">
+</head>
+<body style="background-color:aquamarine;">
+  <div class="calculator">
+    <input type="text" id="result" readonly>
+    <table>
+      <tr>
+        <td><button onclick="clear_num()">C</button></td>
+        <td><button onclick="delete_num()">&larr;</button></td>
+        <td><button onclick="add_num('/')">/</button></td>
+        <td><button onclick="add_num(')')">)</button></td>
+        <td><button onclick="SquareRoot_num()">root</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="add_num('7')">7</button></td>
+        <td><button onclick="add_num('8')">8</button></td>
+        <td><button onclick="add_num('9')">9</button></td>
+        <td><button onclick="add_num('-')">-</button></td>
+        <td><button onclick="add_num('Math.sin(')">sin</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="add_num('4')">4</button></td>
+        <td><button onclick="add_num('5')">5</button></td>
+        <td><button onclick="add_num('6')">6</button></td>
+        <td><button onclick="add_num('+')">+</button></td>
+        <td><button onclick="add_num('Math.cos(')">cos</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="add_num('1')">1</button></td>
+        <td><button onclick="add_num('2')">2</button></td>
+        <td><button onclick="add_num('3')">3</button></td>
+        <td rowspan="2"><button onclick="calculateResult()">=</button></td>
+        <td><button onclick="add_num('Math.tan(')">tan</button></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button onclick="add_num('0')">0</button></td>
+        <td><button onclick="add_num(',')">,</button></td>
+        <td><button onclick="add_num('Math.pow(')">pow</button></td>
+      </tr>
+    </table>
+  </div>
+  <script src="/Users/sikindharreddygangidi/Desktop/new_calc.js"></script>
+</body>
+</html>
